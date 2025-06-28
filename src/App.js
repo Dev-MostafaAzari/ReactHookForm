@@ -1,18 +1,20 @@
 import FormValidation from "./components/Register";
-import {BrowserRouter,Route,Router} from "react-router-dom"
+import {BrowserRouter,Route, Routes} from "react-router-dom"
 
 
 function App() {
-  <BrowserRouter>
+  
   return (
+    <BrowserRouter>
     <div className="App">
-      <Router>
+      <Routes>
         <Route path="/ReactHookForm" element={<FormValidation/>}/>
-      </Router>
+      </Routes>
       
     </div>
+    </BrowserRouter>
   );
-  </BrowserRouter>
+  
 }
 
 export default App;
