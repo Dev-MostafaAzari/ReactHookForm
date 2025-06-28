@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Route path="" element={<FormValidation/>}/>
+        <Route path="/ReactHookForm" element={<FormValidation/>}/>
       </Router>
       
     </div>
