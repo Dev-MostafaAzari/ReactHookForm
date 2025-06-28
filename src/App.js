@@ -1,10 +1,11 @@
-import FormControl from "./components/Register";
+import FormValidation from "./components/Register";
+
 
 
 function App() {
   return (
     <div className="App">
-      <FormControl/>
+      <FormValidation/>
     </div>
   );
 }

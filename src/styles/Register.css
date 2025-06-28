@@ -1,0 +1,57 @@
+#RegisterCol
+{
+    box-shadow: 2px 2px 5px rgb(218, 218, 219);
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+#Form
+{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 30px;
+}
+
+#Form input
+{
+    max-width: 500px;
+    margin: auto;
+    margin-top: 4px;
+    
+}
+
+#Form .btn-group
+{
+    display: grid;
+    margin: auto;
+    margin-top: 4px;
+    max-width: 500px;
+}
+#Form span 
+{
+    color:red;
+    font-weight: normal;
+
+}
+#alert
+{
+    max-width: 300px;
+    margin-top: 15px;
+    margin-left: auto;
+    background-color: #00A693;
+    
+}
+#alertcon
+{
+    display: flex;
+    gap: 80px;
+}
+#alertcon p 
+{
+    font-weight: bold;
+    font-size: larger;
+    color: navy;
+    font-style: italic;
+}
