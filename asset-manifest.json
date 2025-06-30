@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ReactHookForm/static/css/main.6dfe1308.css",
-    "main.js": "/ReactHookForm/static/js/main.91a5ed64.js",
+    "main.css": "/ReactHookForm/static/css/main.a2d15819.css",
+    "main.js": "/ReactHookForm/static/js/main.8101b060.js",
     "static/js/453.cd495333.chunk.js": "/ReactHookForm/static/js/453.cd495333.chunk.js",
     "index.html": "/ReactHookForm/index.html",
-    "main.6dfe1308.css.map": "/ReactHookForm/static/css/main.6dfe1308.css.map",
-    "main.91a5ed64.js.map": "/ReactHookForm/static/js/main.91a5ed64.js.map",
+    "main.a2d15819.css.map": "/ReactHookForm/static/css/main.a2d15819.css.map",
+    "main.8101b060.js.map": "/ReactHookForm/static/js/main.8101b060.js.map",
     "453.cd495333.chunk.js.map": "/ReactHookForm/static/js/453.cd495333.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6dfe1308.css",
-    "static/js/main.91a5ed64.js"
+    "static/css/main.a2d15819.css",
+    "static/js/main.8101b060.js"
   ]
 }
