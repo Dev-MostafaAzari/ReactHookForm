@@ -24,8 +24,9 @@
 #Form input
 {
     max-width: 500px;
-    margin: auto;
+    margin: 0px;
     margin-top: 4px;
+    font-size: medium;
     
 }
 
@@ -34,8 +35,26 @@
     display: grid;
     margin: auto;
     margin-top: 4px;
-    max-width: 500px;
+    max-width: 600px;
 }
+
+#Form .input-group
+{
+    justify-content: center;
+    max-width: 600px;
+    margin: auto;
+    
+}
+
+#Form .input-group-text
+{
+    margin-top: 4px;
+    font-size: large;
+    width: 150px;
+    font-weight: 600;
+    color: darkblue;
+}
+
 #Form span 
 {
     color:red;
@@ -61,4 +80,25 @@
     font-size: larger;
     color: navy;
     font-style: italic;
+}
+
+@media only screen and (max-width:600px)
+{
+    #Form .input-group-text
+    {
+        width: 91px;
+        font-size: small;
+    }
+    #Form .btn-group
+    {
+        max-width: 591px;
+    }
+    #Form input
+    {
+        font-size: small;
+    }
+    #Form span 
+    {
+        font-size: small;
+    }
 }

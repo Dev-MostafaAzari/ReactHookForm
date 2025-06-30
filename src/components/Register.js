@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { Col, Container, Form, Row, FormLabel, FormGroup, FormControl, Button, ButtonGroup, Alert } from "react-bootstrap";
+import { Col, Container, Form, Row, FormLabel, FormGroup, FormControl, Button, ButtonGroup, Alert, InputGroup } from "react-bootstrap";
 import { useForm } from 'react-hook-form';
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import "../styles/Register.css";
+import InputGroupText from 'react-bootstrap/esm/InputGroupText';
 
 var schema = yup.object().shape({
     email: yup.string().email("invalid Email!").required("email Required!"),
@@ -36,13 +37,25 @@ function FormValidation() {
                         <Form id="Form" onSubmit={handleSubmit(valid)}>
                             <FormLabel>Register Panel</FormLabel>
                             <FormGroup>
-                                <FormControl type="text" id="Gmail" placeholder="Gmail" {...register('email')} />
+                                <InputGroup>
+                                    <InputGroupText>Gmail</InputGroupText>
+                                    <FormControl type="text" id="Gmail" placeholder="example: abc@gmail.com" {...register('email')} />
+                                </InputGroup>                             
                                 <span>{errors.email?.message}</span>
-                                <FormControl type="password" id="Password" placeholder="Password" {...register("password")} />
+                                <InputGroup>
+                                    <InputGroupText>Password</InputGroupText>
+                                    <FormControl type="password" id="Password" placeholder="example: eaZ126!" {...register("password")} />
+                                </InputGroup>
                                 <span>{errors.password?.message}</span>
-                                <FormControl type="password" id="RePassword" placeholder="RePassword" {...register("repassword")} />
+                                <InputGroup>
+                                    <InputGroupText>Repassword</InputGroupText>
+                                    <FormControl type="password" id="RePassword" placeholder="" {...register("repassword")} />
+                                </InputGroup>
                                 <span>{errors.repassword?.message}</span>
-                                <FormControl type="text" id="pnumber" placeholder="09123456789" {...register("phoneNumber")}/>
+                                <InputGroup>
+                                    <InputGroupText>Number</InputGroupText>
+                                    <FormControl type="text" id="pnumber" placeholder="example: 09123456789" {...register("phoneNumber")}/>
+                                </InputGroup>
                                 <span>{errors.phoneNumber?.message}</span>
                             </FormGroup>
                             <ButtonGroup>
