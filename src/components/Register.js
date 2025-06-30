@@ -6,9 +6,10 @@ import * as yup from "yup";
 import "../styles/Register.css";
 
 var schema = yup.object().shape({
-    email: yup.string().email("invalid Email").required("email Required"),
-    password: yup.string().min(6, "at least 6 character").required("password Required"),
-    repassword: yup.string().oneOf([yup.ref("password"), null], "Password incorect!").required("please confirm your password!")
+    email: yup.string().email("invalid Email!").required("email Required!"),
+    password: yup.string().matches(/(?=.*[!@#$])(?=.*[A-Z])(?=.{6})[(A-Za-z0-9)]+/, "invalid password!").required("password Required!"),
+    repassword: yup.string().oneOf([yup.ref("password"), null], "Password incorect!").required("please confirm your password!"),
+    phoneNumber : yup.string().matches(/^09\d{9}/,"invalid number!").required("please enter your number!")
 })
 
 function FormValidation() {
@@ -41,6 +42,8 @@ function FormValidation() {
                                 <span>{errors.password?.message}</span>
                                 <FormControl type="password" id="RePassword" placeholder="RePassword" {...register("repassword")} />
                                 <span>{errors.repassword?.message}</span>
+                                <FormControl type="text" id="pnumber" placeholder="09123456789" {...register("phoneNumber")}/>
+                                <span>{errors.phoneNumber?.message}</span>
                             </FormGroup>
                             <ButtonGroup>
                                 <Button type="submit">Register</Button>
